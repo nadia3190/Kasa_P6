@@ -1,0 +1,27 @@
+{
+    "workbench.colorTheme": "OM Theme (Night Owl Italic)",
+    "kite.showWelcomeNotificationOnStartup": false,
+    "workbench.editor.untitled.hint": "hidden",
+    "tabnine.experimentalAutoImports": true,
+    "editor.inlineSuggest.enabled": true,
+    "explorer.confirmDelete": false,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "yaml": false,
+        "html": true
+    },
+    "vs-code-prettier-eslint.prettierLast": false,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "javascript.format.insertSpaceAfterCommaDelimiter": false,
+    "[javascript]": {
+        
+        "editor.maxTokenizationLineLength": 2500
+    }
+}
