@@ -5,7 +5,9 @@ import Footer from "./components/Footer/Footer.js"
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import NotFound from './pages/404/Not-found';
 
+
 import MyContext from './MyContext.js';
+import About from './pages/About/About';
 
 const App = () => {
   const basenameValue = '/APP'; 
@@ -17,6 +19,7 @@ const App = () => {
      <Navbar />
      <div className='container-app'>
       <Routes> 
+         <Route path="/About" element={<About />} />
         <Route path="/Not-found" element={<NotFound />} />
         <Route path="/*" element={<Navigate replace to="/Not-found" />} />
       </Routes>
