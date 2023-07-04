@@ -2,6 +2,7 @@ import './App.css';
 import React from "react";
 import Navbar from "./components/Navbar/Navbar.js"
 import Footer from "./components/Footer/Footer.js"
+import Home from "./pages/Home/Home.js";
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import NotFound from './pages/404/Not-found';
 
@@ -20,8 +21,9 @@ const App = () => {
      <div className='container-app'>
       <Routes> 
          <Route path="/About" element={<About />} />
-        <Route path="/Not-found" element={<NotFound />} />
-        <Route path="/*" element={<Navigate replace to="/Not-found" />} />
+         <Route path="/" element={<Home />} />
+         <Route path="/Not-found" element={<NotFound />} />
+         <Route path="/*" element={<Navigate replace to="" />} />
       </Routes>
       
      </div>
