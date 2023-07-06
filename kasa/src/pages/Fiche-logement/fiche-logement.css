@@ -1,0 +1,62 @@
+section.main {
+    color: #FF6060;
+}
+
+
+/* adding min-height to avoid layout shift when both collapsibles are closed*/
+
+.listing--content {
+    min-height: 550px
+}
+
+.listing--content-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.listing--heading {
+    margin-bottom: 20px;
+}
+
+.listing--heading h1 {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.listing--heading h2 {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.listing--wrapper-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .listing--content {
+        min-height: 580px
+    }
+    .listing--content-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+    .listing--heading h1 {
+        font-size: 2.25rem;
+    }
+    .listing--heading h2 {
+        font-size: 1.125rem;
+    }
+    .listing--wrapper-right {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+    .collapsible-container {
+        display: flex;
+        gap: 75px;
+    }
+}
