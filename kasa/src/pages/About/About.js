@@ -1,7 +1,7 @@
 
 
  import React from 'react';
-import './About.css';
+import './About.scss';
 import Background from '../../components/Background/Background';
 import headerImage from "../../assets/images/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png"
 import Section from '../../components/Section/Section';

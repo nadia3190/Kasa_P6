@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+import './Navbar.scss';
 import logo from '../../assets/images/kasa-logo-pink.png';
 
 

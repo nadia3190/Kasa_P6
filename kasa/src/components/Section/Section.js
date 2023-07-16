@@ -1,5 +1,5 @@
 import React from "react";
-import "./Section.css"
+import "./Section.scss"
 import downArrow from "../../assets/images/down-arrow.svg"
 
 

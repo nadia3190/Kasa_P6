@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom"
-import "./Not-found.css"
+import "./Not-found.scss"
 
 //need to insert a route to home page
 

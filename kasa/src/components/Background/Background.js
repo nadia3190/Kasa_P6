@@ -1,5 +1,5 @@
 import React from "react";
-import "./Background.css"
+import "./Background.scss"
 
 const Background = (props) => {
     return (
@@ -11,4 +11,4 @@ const Background = (props) => {
 }
 
 
-export default Background;
+export default Background

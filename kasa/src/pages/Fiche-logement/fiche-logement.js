@@ -1,6 +1,6 @@
 import React from "react"
 import Section from "../../components/Section/Section"
-import "./fiche-logement.css"
+import "./fiche-logement.scss"
 export const paragraph = "paragraph"
 export const list = "list"
 

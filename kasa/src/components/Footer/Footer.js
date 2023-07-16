@@ -1,7 +1,7 @@
 //le footer 
 
 import React from 'react';
-import './Footer.css';
+import './Footer.scss';
 import logo from '../../assets/images/kasa-logo-white.png';
 
 const Footer = () => {

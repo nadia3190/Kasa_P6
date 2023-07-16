@@ -1,71 +1,69 @@
 .logo {
-    max-height: 43px;
-    align-self: center;
-    /* Ajout de l'alignement vertical du logo */
+  max-height: 43px;
+  align-self: center;
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    max-width: 1440px;
-    justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  max-width: 1440px;
+  justify-content: flex-end;
 }
 
 .nav-menu {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .nav-menu li {
-    margin-left: 40px;
-    color: #FF6060;
+  margin-left: 40px;
+  color: #FF6060;
 }
 
 .navbar-container {
-    display: flex;
-    align-items: center;
-    /* Ajout de l'alignement vertical au centre */
-    padding: 20px;
-    max-width: 1440px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  max-width: 1440px;
 }
 
 .navbar ul {
-    list-style-type: none;
-    align-items: right;
-    text-transform: uppercase;
-    flex-grow: 1;
-    margin-right: auto;
-    /* Ajout du remplissage horizontal des liens */
+  list-style-type: none;
+  align-items: right;
+  text-transform: uppercase;
+  flex-grow: 1;
+  margin-right: auto;
 }
 
 a {
-    cursor: pointer;
-    text-decoration: none;
-    color: var(--main-pink);
-    font-size: 0.75rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: pink;
+  font-size: 0.75rem;
 }
 
 @media screen and (min-width: 768px) {
-    .navbar {
-        padding: 40px 100px 20px 100px;
-    }
-    .logo {
-        height: 68px;
-        align-self: center;
-        /* Ajout de l'alignement vertical du logo pour la version responsive */
-    }
-    .navbar ul {
-        text-transform: none;
-    }
-    .nav-menu {
-        margin-right: 60px;
-    }
-    a {
-        font-size: 1.5rem;
-    }
-    a:hover {
-        text-decoration-line: underline;
-    }
+  .navbar {
+    padding: 40px 100px 20px 100px;
+  }
+  .logo {
+    height: 68px;
+    align-self: center;
+  }
+  .navbar ul {
+    text-transform: none;
+  }
+  .nav-menu {
+    margin-right: 60px;
+  }
+  a {
+    font-size: 1.5rem;
+  }
+  a:hover {
+    text-decoration-line: underline;
+  }
 }
+
+/*# sourceMappingURL=Navbar.css.map */
