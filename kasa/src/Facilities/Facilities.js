@@ -30,34 +30,36 @@ const UseGetListings = () => {
     return { listings, isLoading, error };
 }
 
-export default UseGetListings;
+export { UseGetListings };
 
-const UseGetListingById = (params) => {
-    const navigate = useNavigate();
-    const [listingById, setListingById] = useState([]);
-    const [isLoading, setIsLoading] = useState(true);
-    const [error, setError] = useState(false);
+export function UseGetListingById(params) {
+    const navigate = useNavigate()
+    const [listingById, setListingById] = useState([])
+    const [isLoading, setIsLoading] = useState(true)
+    const [error, setError] = useState(false)
 
     useEffect(() => {
         async function getListingById() {
             try {
-                const response = await fetch("../../data/logements.json");
-                const data = await response.json();
-                setListingById(data.find(item => item.id === params.id));
-            } catch (err) {
-                console.log(err);
-                setError(true);
-                navigate("/not-found", { state: { message: "Erreur dans la récupération des données" } });
-            } finally {
+                const response = await fetch("../../data/logements.json")
+                const data = await response.json()
+                setListingById(data.find(item => item.id === params.id))
+            }
+            catch(err) {
+                console.log(err)
+                setError(true)
+                navigate("/not-found", { state: { message: "Erreur dans la récupération des données" } })
+            }
+            finally {
                 setTimeout(() => {
-                    setIsLoading(false);
-                }, 1500);
+                    setIsLoading(false)
+                }, 1500)
             }
         }
-        getListingById();
-    }, [params.id, navigate]);
+        getListingById()
+    }, [params.id, navigate])
 
-    return { listingById, isLoading, error };
+    return {listingById, isLoading, error}
 }
 
-export { UseGetListingById };
+

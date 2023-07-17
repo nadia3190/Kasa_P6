@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom"
-import "./Card.css"
+import "./Card.scss"
 const Card = (props) => {
     return (
         <Link to={`/fiche-logement/${props.item.id}`} className="cardlink">
