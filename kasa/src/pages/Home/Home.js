@@ -8,25 +8,36 @@ import Chargement from "../../components/Chargement/Chargement"
 
 
 
-export default function Home() {
-    const {listings, isLoading, error} = UseGetListings()
-    const cards = listings.map(item => {
-        return (
-            <Card  key={item.id} item={item} />)
+const Home = () => {
+    const {listings, isLoading, error} = UseGetListings()// on recupere les données de UseGetListings dans des variables
+    const cards = listings.map(item => {//map permet de parcourir un tableau et de retourner un tableau avec les modifications
+        return (//return array of cards 
+            <Card  key={item.id} item={item} />) //key permet de donner un id unique à chaque card
     })
     if(error) {
         return <span>Problème de connexion au serveur...</span>
-    } else if(listings) {
+    } else if(listings) {// listings est un tableau, donc si listings est true, alors il y a des données
         return (
             <section>
                 <section>
                     <Background image={headerImage} title="Chez vous, partout et ailleurs" />
                 </section>
                  <section className="home">
-                    {isLoading ? <Chargement /> : cards}
+                    {isLoading ? <Chargement /> : cards
+                        //en gros, si isLoading est true, affiche le composant Chargement, sinon affiche les cards
+                        //if(isaLoading) {
+                        //    return <Chargement />
+                        //} else {
+                        //    return cards
+                        //
+                   } 
+                    
+
                 </section>
                
             </section>
         )
     }
 }
+
+export default Home;

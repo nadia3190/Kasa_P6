@@ -1,34 +1,33 @@
-section.main {
-    color: #FF6060;
+.container-content {
+    min-height: 550px;
+    max-width: 100%;
 }
 
-
-/* adding min-height to avoid layout shift when both collapsibles are closed*/
-
-.listing--content {
-    min-height: 550px
-}
-
-.listing--content-wrapper {
+.container-wrapper {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
-.listing--heading {
+.container-wrapper-left {
+    width: 100%;
+}
+
+.container-heading {
     margin-bottom: 20px;
 }
 
-.listing--heading h1 {
+.container-heading h1 {
     font-size: 1.125rem;
     font-weight: 500;
 }
 
-.listing--heading h2 {
+.container-heading h2 {
     font-size: 0.875rem;
     font-weight: 500;
 }
 
-.listing--wrapper-right {
+.container-wrapper-right {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,22 +35,22 @@ section.main {
 }
 
 @media screen and (min-width: 768px) {
-    .listing--content {
-        min-height: 580px
+    .container-content {
+        min-height: 580px;
     }
-    .listing--content-wrapper {
+    .container-wrapper {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin-bottom: 25px;
     }
-    .listing--heading h1 {
+    .container-heading h1 {
         font-size: 2.25rem;
     }
-    .listing--heading h2 {
+    .container-heading h2 {
         font-size: 1.125rem;
     }
-    .listing--wrapper-right {
+    .container-wrapper-right {
         flex-direction: column-reverse;
         align-items: flex-end;
     }
