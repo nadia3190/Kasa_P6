@@ -1,33 +1,25 @@
-import React from "react"
-import Section from "../../components/Section/Section"
-import "./fiche-logement.scss"
-import "../../components/Carroussel/Carroussel"
-import Carroussel from "../../components/Carroussel/Carroussel"
-import CarrousselImage from "../../assets/images/muhr-P_XxsdVgtpQ-unsplash.jpg"
-
-
-export const paragraph = "paragraph"
-export const list = "list"
+import React from 'react';
+import Section from '../../components/Section/Section';
+import Carroussel from '../../components/Carroussel/Carroussel';
+import images from "../../images.json";
+import './fiche-logement.scss';
 
 const FicheLogement = () => {
-    return (
-        <section className="main">
-            <div className="container-content">
-                <div className="container-wrapper">
-                    <div className="container-wrapper-left">
-                        <div className="container-heading">
-                          <Carroussel image={CarrousselImage} title="" />
-                        </div>
-                    </div>
-                   
-                </div>
-                <div className="collapsible-container">
-                    <Section />
-                    <Section />
-                </div>
+  return (
+    <section className="main">
+      <div className="container-content">
+        <div className="container-wrapper">
+          <div className="container-wrapper-left">
+            <div className="container-heading">
+              <Carroussel images={images} />
             </div>
-        </section>
-    );
+          </div>
+        </div>
+        <Section />
+        <Section />
+      </div>
+    </section>
+  );
 };
 
 export default FicheLogement;
