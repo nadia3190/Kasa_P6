@@ -1,11 +1,12 @@
 import React from "react";
 import "./Section.scss"
 import downArrow from "../../assets/images/down-arrow.svg"
-export const paragraph = "paragraph"
-export const list = "list"
+import { paragraph, list } from "../../assets/Constantes/constant";
+
 
 const Section = (props) => {
      const [isShown, setIsShown] = React.useState(false);
+
 
   function toggle() {
     setIsShown((prev) => !prev);
@@ -15,19 +16,22 @@ const Section = (props) => {
     return <p className="section-description">{props.description}</p>;
   }
 
-  function renderList() {
-    const amenities = props.equipments.map((item, index) => (
-      <li key={index} className="section-li">
-        {item}
-      </li>
-    ));
-    return <ul className="section-description">{amenities}</ul>;
+   function renderList() {
+    return (
+      <ul className="section-description">
+        {props.equipments.map((item, index) => (
+          <li key={index} className="section-li">
+            {item}
+          </li>
+        ))}
+      </ul>
+    );
   }
 
   function renderContent() {
-    if (props.type === "paragraph") {
+    if (props.type === paragraph) {
       return renderParagraph();
-    } else if (props.type === "list") {
+    } else if (props.type === list) {
       return renderList();
     }
     return null;
@@ -38,7 +42,7 @@ const Section = (props) => {
                 <h3 className="section-title">{props.title}</h3>
                 <img src={downArrow} className={isShown ? "section-icon rotate" : "section-icon"} alt="icône d'ouverture ou fermeture."/>
             </div>
-             {isShown && <div className="section-description animate">{renderContent}</div>}
+             {isShown && <div className="section-description animate">{renderContent()}</div>}
        
            
         </article>

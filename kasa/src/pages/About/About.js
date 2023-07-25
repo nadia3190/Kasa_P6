@@ -5,13 +5,14 @@ import './About.scss';
 import Background from '../../components/Background/Background';
 import headerImage from "../../assets/images/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png"
 import Section from '../../components/Section/Section';
-export const paragraph = "paragraph"
+import { paragraph} from "../../assets/Constantes/constant";
 
 
  const About = () => {
   return (
         <section className="apropos">
             <Background image={headerImage}title={null}/>
+            
             <Section type={paragraph} title="Fiabilité" description="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes." />
 
             <Section  type={paragraph} title="Respect" description="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."/>

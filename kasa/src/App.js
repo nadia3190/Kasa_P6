@@ -6,8 +6,6 @@ import Home from "./pages/Home/Home.js";
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import NotFound from './pages/404/Not-found';
 import FicheLogement from './pages/Fiche-logement/fiche-logement';
-
-
 import MyContext from './MyContext.js';
 import About from './pages/About/About';
 
