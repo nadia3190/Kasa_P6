@@ -1,25 +1,22 @@
 .apropos {
     animation: slide-in 0.8s;
     min-height: 100vh;
-}
-
-section.apropos img.Backround-image {
-    height: 220px
-}
-
-@keyframes slidein {
-    from {
-        transform: translateX(-50%);
-        opacity: 0;
+    img.Backround-image {
+        height: 220px;
     }
-    to {
-        transform: translateX(0%);
-        opacity: 1;
+    @keyframes slide-in {
+        from {
+            transform: translateX(-50%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0%);
+            opacity: 1;
+        }
     }
-}
-
-@media screen and (min-width: 768px) {
-    .apropos-Bacground {
-        margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+        &-Background {
+            margin-bottom: 30px;
+        }
     }
 }
