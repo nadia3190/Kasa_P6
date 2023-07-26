@@ -12,18 +12,14 @@ const Navbar = () => {
       <Link to="/" className="navbar-logo">
         <img src={logo} alt="logo" className="logo" />
       </Link>
-      <ul className="nav-menu">
-        <li className="nav-item">
-          <Link to="/" className="nav-links">
-            Accueil
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/about" className="nav-links">
-            A propos
-          </Link>
-        </li>
-      </ul>
+      <div className="nav-menu">
+        <Link to="/" className="nav-links">
+          Accueil
+        </Link>
+        <Link to="/about" className="nav-links">
+          A propos
+        </Link>
+      </div>
     </nav>
   );
 };

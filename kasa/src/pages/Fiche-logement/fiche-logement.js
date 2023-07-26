@@ -1,7 +1,6 @@
 import React from 'react';
 import Section from '../../components/Section/Section';
 import Carroussel from '../../components/Carroussel/Carroussel';
-import images from "../../images.json";
 import './fiche-logement.scss';
 import { paragraph, list} from "../../assets/Constantes/constant"; 
 import data from "../../Data/logements.json";
@@ -14,7 +13,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 
   const selectedLogement = data.find((logement) => logement.id === id);// on récupère le logement qui correspond à l'id de l'url
   if (!selectedLogement) {// si le logement n'existe pas on redirige vers la page 404
-    
+   
   
     return  navigate("/not-found");
   }
@@ -25,7 +24,8 @@ import { useNavigate, useParams } from 'react-router-dom';
         <div className="container-wrapper">
           <div className="container-wrapper-left">
             <div className="container-heading">
-              <Carroussel images={images} alt="" />
+              <Carroussel images={selectedLogement.pictures} />
+              <h1 className="container-title">{selectedLogement.title}</h1>
             </div>
           </div>
         </div>
