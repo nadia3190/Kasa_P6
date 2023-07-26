@@ -5,18 +5,18 @@ import { paragraph, list } from "../../assets/Constantes/constant";
 
 
 const Section = (props) => {
-     const [isShown, setIsShown] = React.useState(false);
+     const [isShown, setIsShown] = React.useState(false);// c'est un hook qui permet de gérer l'état d'un composant fonctionnel
 
 
-  function toggle() {
+  function toggle() {// cette fonction permet de changer l'état du composant 
     setIsShown((prev) => !prev);
   }
 
-  function renderParagraph() {
+  function renderParagraph() {// cette fonction permet de rendre un paragraphe
     return <p className="section-description">{props.description}</p>;
   }
 
-   function renderList() {
+   function renderList() {// cette fonction permet de rendre une liste
     return (
       <ul className="section-description">
         {props.equipments.map((item, index) => (
@@ -28,7 +28,7 @@ const Section = (props) => {
     );
   }
 
-  function renderContent() {
+  function renderContent() {// cette fonction permet de rendre le contenu de la section
     if (props.type === paragraph) {
       return renderParagraph();
     } else if (props.type === list) {
