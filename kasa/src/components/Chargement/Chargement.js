@@ -1,11 +1,13 @@
 import React from "react";
-import logo from "../../assets/images/kasa-logo-pink.png";
+import chargement from "../../assets/images/charge.jpeg";
+import logo from "../../assets/images/kasa-logo-pink.png"
 import "./Chargement.scss"
 
 const Chargement =  () => {
         return <div className="loader--wrapper">
-                    <img className="loader--image" src={logo} alt="Kasa logo."/>
-                    <h2 className="loader--text">Chargement...</h2>
+               <img className="loader--text" src={logo} alt="logo kasa"/>
+                    <img className="loader--image" src={chargement} alt="Loading icon"/>
+                 
                 </div>
 }
 

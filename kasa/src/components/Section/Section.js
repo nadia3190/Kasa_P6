@@ -4,6 +4,7 @@ import downArrow from "../../assets/images/down-arrow.svg"
 import { paragraph, list } from "../../assets/Constantes/constant";
 
 
+
 const Section = (props) => {
      const [isShown, setIsShown] = React.useState(false);// c'est un hook qui permet de gérer l'état d'un composant fonctionnel
 
