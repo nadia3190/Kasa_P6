@@ -1,61 +1,45 @@
-.container-content {
-    min-height: 550px;
-    max-width: 100%;
-}
-
 .container-wrapper {
     display: flex;
     flex-direction: column;
     width: 100%;
-}
-
-.container-wrapper-left {
-    width: 100%;
-}
-
-.container-heading {
-    margin-bottom: 20px;
-}
-
-.container-heading h1 {
-    font-size: 1.125rem;
-    font-weight: 500;
-}
-
-.container-heading h2 {
-    font-size: 0.875rem;
-    font-weight: 500;
-}
-
-.container-wrapper-right {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-@media screen and (min-width: 768px) {
-    .container-content {
-        min-height: 580px;
+    .container-wrapper-left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .container-stars,
+        .container-host {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            .container-host {
+                justify-content: flex-end;
+            }
+        }
     }
-    .container-wrapper {
+    .container-wrapper-right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    @media screen and (min-width: 768px) {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin-bottom: 25px;
-    }
-    .container-heading h1 {
-        font-size: 2.25rem;
-    }
-    .container-heading h2 {
-        font-size: 1.125rem;
-    }
-    .container-wrapper-right {
-        flex-direction: column-reverse;
-        align-items: flex-end;
-    }
-    .collapsible-container {
-        display: flex;
-        gap: 75px;
+        .container-heading h1 {
+            font-size: 2.25rem;
+        }
+        .container-heading h2 {
+            font-size: 1.125rem;
+        }
+        .container-wrapper-right {
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .collapsible-container {
+            display: flex;
+            gap: 75px;
+        }
     }
 }
