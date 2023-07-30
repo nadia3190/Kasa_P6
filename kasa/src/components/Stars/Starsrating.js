@@ -1,14 +1,14 @@
 import React from "react";
 import pinkVector from "../../assets/images/pink-star-vector.svg"
 import greyVector from "../../assets/images/grey-star-vector.svg"
+import PropTypes from "prop-types";
 import "./Starsrating.scss"
 const StarRating=(props) => {
     const ratingRange = [1, 2, 3, 4, 5]
     const stars = ratingRange.map((item, i) => {
-      return props.rating >= item ? 
-        <img key={i} src={pinkVector} className="st" alt="icône étoile"/> : 
-        <img key={i} src={greyVector} className="st" alt="icône étoile"/>
-    })
+      //permets de comparer la note du logement avec le nombre d'étoiles du rating
+      return props.rating >= item ? <img key={i} src={pinkVector} className="st" alt="icône étoile"/> : <img key={i} src={greyVector} className="st" alt="icône étoile"/>})
+    
     return (
       <div className="stars">
         {stars}
@@ -17,3 +17,7 @@ const StarRating=(props) => {
   };
 
 export default StarRating;
+
+StarRating.propTypes = {
+  rating: PropTypes.number.isRequired,
+};

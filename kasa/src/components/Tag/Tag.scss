@@ -1,0 +1,34 @@
+$color-text: #d04f4f;
+$color-primary: #ff5a5f;
+$color-primary-dark: #e0383e;
+$color-secondary: #00a699;
+$color-secondary-dark: #00887a;
+$color-tertiary: #007a87;
+.tag {
+    &__name {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: $color-text;
+        margin-bottom: 1rem;
+    }
+    &__description {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: $color-text;
+        margin-bottom: 1rem;
+    }
+    &__button {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: $color-text;
+        background-color: $color-primary;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background-color: $color-primary-dark;
+        }
+    }
+}

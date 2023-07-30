@@ -8,16 +8,16 @@ import previousArrow from "../../assets/images/previous-arrow.svg";
 
 
 const Carroussel = (props) => {
-    const [counter, setCounter] = useState(0);
+    const [counter, setCounter] = useState(0);//on initialise le compteur à 0
 
     const handleNextArrowClick = () => {
-        if (counter >= props.images.length - 1) return;
-        setCounter(counter + 1);
+        if (counter >= props.images.length - 1) return;//si le compteur est supérieur ou égal à la longueur du tableau d'images, on ne fait rien
+        setCounter(counter + 1);//sinon, on incrémente le compteur
     }
 
-    const handlePreviousArrowClick = () => {
+    const handlePreviousArrowClick = () => {//si le compteur est inférieur ou égal à 0, on ne fait rien
         if (counter <= 0) return;
-        setCounter(counter - 1);
+        setCounter(counter - 1);//sinon, on décrémente le compteur
     }
 
     return (

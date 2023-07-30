@@ -4,6 +4,7 @@ import Carroussel from '../../components/Carroussel/Carroussel';
 import Chargement from '../../components/Chargement/Chargement';
 import Host from '../../components/Host/Host';
 import StarRating from '../../components/Stars/Starsrating';
+import Tag from '../../components/Tag/Tag';
 import './fiche-logement.scss';
 import { paragraph, list} from "../../assets/Constantes/constant"; 
 import data from "../../Data/logements.json";
@@ -16,14 +17,14 @@ import { useState, useEffect } from "react";
   const { id } = useParams();// c'est un hook qui permet de récupérer les paramètres de l'url
    const [isLoading, setIsLoading] = useState(true); 
  
- useEffect(() => {
-    setTimeout(() => {
+ useEffect(() => {//  permet d'exécuter une fonction au chargement de la page
+    setTimeout(() => {// permet de simuler un chargement de 1s
       setIsLoading(false);
     }, 1000);
-  }, []);
+  }, []);//le tableau vide permet d'exécuter la fonction une seule fois au chargement de la page
 
   const selectedLogement = data.find((logement) => logement.id === id);//  on récupère le logement qui correspond à l'id de l'url
-   const { description, equipments } = selectedLogement;
+   const { description, equipments } = selectedLogement;// on récupère la description et les équipements du logement
   if (!selectedLogement) {// si le logement n'existe pas on redirige vers la page 404
   
     return  navigate("/not-found");
@@ -37,18 +38,22 @@ import { useState, useEffect } from "react";
             <div className="container-heading">
               <Carroussel images={selectedLogement.pictures} />
               <h1 className="container-title">{selectedLogement.title}</h1>
-             
-          
-
             </div>
          
           </div>
        
-        </div><div className="container-host">
+        </div>
+        <div className="container-host">
             <Host host={selectedLogement.host} />
-          </div> <div className="container-stars">
+          </div>
+           <div className="container-stars">
             <StarRating rating={selectedLogement.rating} />
           </div>
+          <div className='Tag--'>
+            <Tag tags={selectedLogement.tags} />
+          </div>
+
+
           
         <Section type={paragraph} title="Description" description={description} equipments={null} />
         <Section type={list} title="Equipements" description={null} equipments={equipments} />

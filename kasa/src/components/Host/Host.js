@@ -1,6 +1,7 @@
 
 import React from "react";
 import "./Host.scss"
+import PropTypes from "prop-types";
 
 
 const Host =(props) => {
@@ -11,3 +12,7 @@ const Host =(props) => {
 }
 
 export default Host;
+
+Host.propTypes = { 
+    host: PropTypes.object.isRequired,
+};

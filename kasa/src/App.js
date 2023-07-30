@@ -1,6 +1,6 @@
 import './App.scss';
 import React from "react";
-import Navbar from "./components/Navbar/Navbar.js"
+import Header from "./components/Header/Header.js"
 import Footer from "./components/Footer/Footer.js"
 import Home from "./pages/Home/Home.js";
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
@@ -15,9 +15,10 @@ const App = () => {
   return (
     <MyContext.Provider value={{ basename: basenameValue }}>
    <BrowserRouter>
-    <div className="App">
-     <Navbar />
-     <div className='container-app'>
+   
+      <div className='main-container'>
+      <Header />
+      <main>
       <Routes> 
          <Route path="/fiche-logement/:id" element={<FicheLogement />} />
          <Route path="/About" element={<About />} />
@@ -25,10 +26,10 @@ const App = () => {
          <Route path="/Not-found" element={<NotFound />} />
          <Route path="/*" element={<Navigate replace to="/Not-found" />} />
       </Routes>
-      
+      </main>
      </div>
      <Footer />
-    </div>
+   
     </BrowserRouter>
     </MyContext.Provider>
   );

@@ -21,14 +21,14 @@ const Home = () => {
   ));
 
   return (
-    <section>
-      <section>
+    <>
+      <div>
         <Background image={headerImage} title="Chez vous, partout et ailleurs" />
-      </section>
-      <section className="home">
+      </div>
+      <div className="home">
         {isLoading ? <Chargement /> : cards}
-      </section>
-    </section>
+      </div>
+    </>
   );
 };
 

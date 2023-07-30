@@ -2,29 +2,29 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.scss';
+import './Header.scss';
 import logo from '../../assets/images/kasa-logo-pink.png';
 
 
-const Navbar = () => {
+const Header = () => {
   return (
-    <nav className="navbar">
-      <Link to="/" className="navbar-logo">
-        <img src={logo} alt="logo" className="logo" />
+    <header>
+      <Link to="/" className="logo">
+        <img src={logo} alt="logo" />
       </Link>
-      <div className="nav-menu">
+      <nav className="nav-menu">
         <Link to="/" className="nav-links">
           Accueil
         </Link>
         <Link to="/about" className="nav-links">
           A propos
         </Link>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 };
 
-export default Navbar
+export default Header
 
 
 

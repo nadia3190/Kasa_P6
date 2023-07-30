@@ -2,6 +2,7 @@ import React from "react";
 import "./Section.scss"
 import downArrow from "../../assets/images/down-arrow.svg"
 import { paragraph, list } from "../../assets/Constantes/constant";
+import PropTypes from "prop-types";
 
 
 
@@ -51,3 +52,11 @@ const Section = (props) => {
     } 
 
 export default Section;
+
+Section.propTypes = {
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    equipments: PropTypes.array.isRequired,
+    type: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
+};
