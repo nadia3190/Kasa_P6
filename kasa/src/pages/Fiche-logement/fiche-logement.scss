@@ -1,49 +1,57 @@
 .container-wrapper {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    .container-wrapper-left {
-        width: 100%;
-        display: flex;
+}
+
+h1 {
+    font-size: 1.125rem;
+}
+
+h2 {
+    font-size: 0.875rem;
+}
+
+.container-host-rating-tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .container-content {
         flex-direction: column;
-        .container-stars,
-        .container-host {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-            .container-host {
-                justify-content: flex-end;
-            }
-        }
-    }
-    .container-wrapper-right {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
-    }
-    .Tag-- {
-        width: 100%;
-        height: auto;
-    }
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-direction: row;
         justify-content: space-between;
         margin-bottom: 25px;
-        .container-heading h1 {
-            font-size: 2.25rem;
-        }
-        .container-heading h2 {
-            font-size: 1.125rem;
-        }
-        .container-wrapper-right {
-            flex-direction: column;
-            align-items: flex-end;
-        }
-        .collapsible-container {
-            display: flex;
-            gap: 75px;
-        }
     }
+    h1 {
+        font-size: 2.25rem;
+    }
+    h2 {
+        font-size: 1.125rem;
+    }
+    .container-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .container-host-rating-tag {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+    .collapsible-container {
+        /*les passer en dessous cote a cote et apres le container-host-rating-tag
+    */
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.collapsible-container {
+    /*les passer en dessous cote a cote et apres le container-host-rating-tag
+    */
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 20px;
 }

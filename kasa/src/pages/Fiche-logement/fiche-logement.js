@@ -29,36 +29,35 @@ import { useState, useEffect } from "react";
   
     return  navigate("/not-found");
 
-  } else {  
+  } else { // sinon on affiche la page du logement sélectionné en passant par le composant chargerment 
     return  isLoading ? <Chargement /> : ( 
-  <section className="main">
+  <> 
+  <Carroussel images={selectedLogement.pictures} />
       <div className="container-content">
         <div className="container-wrapper">
           <div className="container-wrapper-left">
             <div className="container-heading">
-              <Carroussel images={selectedLogement.pictures} />
+             
               <h1 className="container-title">{selectedLogement.title}</h1>
+              <h2>{selectedLogement.location}</h2>
             </div>
-         
           </div>
        
         </div>
-        <div className="container-host">
+        <div className="container-host-rating-tag">
             <Host host={selectedLogement.host} />
-          </div>
-           <div className="container-stars">
             <StarRating rating={selectedLogement.rating} />
-          </div>
-          <div className='Tag--'>
             <Tag tags={selectedLogement.tags} />
           </div>
 
 
-          
-        <Section type={paragraph} title="Description" description={description} equipments={null} />
-        <Section type={list} title="Equipements" description={null} equipments={equipments} />
+         <div className='collapsible-container'>
+          <Section type={paragraph} title="Description" description={description} equipments={null} />
+          <Section type={list} title="Equipements" description={null} equipments={equipments} />
+          </div> 
+        
       </div>
-    </section>
+    </>
 
 
 
