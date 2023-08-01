@@ -54,9 +54,8 @@ const Section = (props) => {
 export default Section;
 
 Section.propTypes = {
-    title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    equipments: PropTypes.array.isRequired,
-    type: PropTypes.string.isRequired,
-    id: PropTypes.number.isRequired,
+  type: PropTypes.string.isRequired, 
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string,
+  equipments: PropTypes.array,
 };

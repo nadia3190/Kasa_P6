@@ -9,5 +9,5 @@ const Tag = (props) => {
 export default Tag;
 
 Tag.propTypes = {
-    tag: PropTypes.string.isRequired,
+  tags: PropTypes.array.isRequired,
 };

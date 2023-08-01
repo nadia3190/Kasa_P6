@@ -12,6 +12,8 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { useState, useEffect } from "react";
 
 
+
+
  const FicheLogement = () => {
   const navigate = useNavigate();// c'est un hook qui permet de naviguer entre les pages
   const { id } = useParams();// c'est un hook qui permet de récupérer les paramètres de l'url
@@ -24,11 +26,14 @@ import { useState, useEffect } from "react";
   }, []);//le tableau vide permet d'exécuter la fonction une seule fois au chargement de la page
 
   const selectedLogement = data.find((logement) => logement.id === id);//  on récupère le logement qui correspond à l'id de l'url
-   const { description, equipments } = selectedLogement;// on récupère la description et les équipements du logement
-  if (!selectedLogement) {// si le logement n'existe pas on redirige vers la page 404
-  
-    return  navigate("/not-found");
-
+ 
+    const ratingValue = parseInt(selectedLogement.rating);
+     const tagsValue = selectedLogement.tags || [];// si le logement n'a pas de tags on lui attribue un tableau vide
+    const equipmentsValue = selectedLogement.equipments !== null ? selectedLogement.equipments : [];
+      const description = selectedLogement.description || "";//
+      
+  if (typeof id === 'undefined') {
+    return navigate("/not-found"); // si le logement n'existe pas on redirige vers la page 404
   } else { // sinon on affiche la page du logement sélectionné en passant par le composant chargerment 
     return  isLoading ? <Chargement /> : ( 
   <> 
@@ -46,14 +51,16 @@ import { useState, useEffect } from "react";
         </div>
         <div className="container-host-rating-tag">
             <Host host={selectedLogement.host} />
-            <StarRating rating={selectedLogement.rating} />
-            <Tag tags={selectedLogement.tags} />
+            <StarRating rating={ratingValue} />
+            <Tag tags={tagsValue} />
           </div>
 
 
          <div className='collapsible-container'>
           <Section type={paragraph} title="Description" description={description} equipments={null} />
-          <Section type={list} title="Equipements" description={null} equipments={equipments} />
+           {equipmentsValue.length > 0 && (
+        <Section type={list} title="Equipements" description={null} equipments= {equipmentsValue}  />
+      )}
           </div> 
         
       </div>
@@ -67,6 +74,8 @@ import { useState, useEffect } from "react";
   );
 }
 };
+
+
 
 export default FicheLogement;
 

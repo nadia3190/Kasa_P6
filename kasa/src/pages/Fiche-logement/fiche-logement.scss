@@ -39,8 +39,6 @@ h2 {
         align-items: flex-end;
     }
     .collapsible-container {
-        /*les passer en dessous cote a cote et apres le container-host-rating-tag
-    */
         flex-direction: column;
         gap: 20px;
         margin-bottom: 20px;
@@ -48,8 +46,6 @@ h2 {
 }
 
 .collapsible-container {
-    /*les passer en dessous cote a cote et apres le container-host-rating-tag
-    */
     display: flex;
     flex-direction: row;
     gap: 20px;

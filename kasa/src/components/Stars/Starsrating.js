@@ -5,9 +5,11 @@ import PropTypes from "prop-types";
 import "./Starsrating.scss"
 const StarRating=(props) => {
     const ratingRange = [1, 2, 3, 4, 5]
+    const ratingAsNumber = parseInt(props.rating); // Convert the rating prop to a number
+
     const stars = ratingRange.map((item, i) => {
       //permets de comparer la note du logement avec le nombre d'étoiles du rating
-      return props.rating >= item ? <img key={i} src={pinkVector} className="st" alt="icône étoile"/> : <img key={i} src={greyVector} className="st" alt="icône étoile"/>})
+      return ratingAsNumber >= item ? <img key={i} src={pinkVector} className="st" alt="icône étoile"/> : <img key={i} src={greyVector} className="st" alt="icône étoile"/>})
     
     return (
       <div className="stars">
