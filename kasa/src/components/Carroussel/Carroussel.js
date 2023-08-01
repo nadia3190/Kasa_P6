@@ -8,31 +8,35 @@ import previousArrow from "../../assets/images/previous-arrow.svg";
 
 
 const Carroussel = (props) => {
-    const [counter, setCounter] = useState(0);//on initialise le compteur à 0
+    const maxIndex = props.images.length - 1; 
 
-    const handleNextArrowClick = () => {
-        if (counter >= props.images.length - 1) return;//si le compteur est supérieur ou égal à la longueur du tableau d'images, on ne fait rien
-        setCounter(counter + 1);//sinon, on incrémente le compteur
+    const [counter, setCounter] = React.useState(0); 
+
+    function prevImage() {
+          setCounter(prevIndex => prevIndex === 0 ? maxIndex : prevIndex - 1)
     }
 
-    const handlePreviousArrowClick = () => {//si le compteur est inférieur ou égal à 0, on ne fait rien
-        if (counter <= 0) return;
-        setCounter(counter - 1);//sinon, on décrémente le compteur
+    function nextImage() {
+        setCounter(prevIndex => prevIndex === maxIndex ? 0 : prevIndex + 1)
     }
-
-    return (
-        <div className="carrousel">
-            <div className="carrousel-container" style={{ transform: `translateX(-${100 * counter}%)` }}>
-                {props.images.map((image, index) => (
-                    <img key={index} src={image} alt="Paysage en plan large" />
-                ))}
-            </div>
-            <div className="carrousel-arrow">
-                <img src={previousArrow} onClick={handlePreviousArrowClick} className="Carroussel-arrow-previous" alt="Flèche gauche" />
-                <img src={nextArrow} onClick={handleNextArrowClick} className="Carroussel-arrow-next" alt="Flèche droite" />
-            </div>
+    const carrouselImages = props.images.map((image, index) => (
+        <div key={index} className={counter === index ? "carrousel-slide carrousel-active" : "carrousel-slide"}>
+            {index === counter && <img src={image} className="carrousel-image" alt="Carrousel d'images du logement." />}
         </div>
-    );
+    ));
+
+   return (
+        <figure className="carrousel">
+            {carrouselImages}
+            {props.images.length > 1 && 
+                <div>
+                    <img src={previousArrow} onClick={prevImage} className="carrousel-arrow previous" alt="Icône de défilement en avant du carrousel."/> 
+                    <img src={nextArrow} onClick={nextImage} className="carrousel-arrow next" alt="Icône de défilement en arrière du carrousel."/> 
+                    <figcaption className="carrousel-caption">{counter+1}/{maxIndex+1}</figcaption>
+                </div>
+            }
+        </figure>
+    )
 }
 
 export default Carroussel;
