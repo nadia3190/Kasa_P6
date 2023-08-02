@@ -11,7 +11,7 @@ h2 {
     font-size: 0.875rem;
 }
 
-.container-host-rating-tag {
+.container-host-rating {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,7 +34,7 @@ h2 {
         flex-direction: row;
         justify-content: space-between;
     }
-    .container-host-rating-tag {
+    .container-host-rating {
         flex-direction: column-reverse;
         align-items: flex-end;
     }

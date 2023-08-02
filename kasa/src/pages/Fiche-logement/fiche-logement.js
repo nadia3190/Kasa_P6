@@ -45,14 +45,15 @@ import { useState, useEffect } from "react";
              
               <h1 className="container-title">{selectedLogement.title}</h1>
               <h2>{selectedLogement.location}</h2>
+               <Tag tags={tagsValue} />
             </div>
           </div>
        
         </div>
-        <div className="container-host-rating-tag">
+        <div className="container-host-rating">
             <Host host={selectedLogement.host} />
             <StarRating rating={ratingValue} />
-            <Tag tags={tagsValue} />
+           
           </div>
 
 

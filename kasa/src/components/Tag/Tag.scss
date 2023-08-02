@@ -1,34 +1,27 @@
-$color-text: #d04f4f;
-$color-primary: #ff5a5f;
-$color-primary-dark: #e0383e;
-$color-secondary: #00a699;
-$color-secondary-dark: #00887a;
-$color-tertiary: #007a87;
-.tag {
-    &__name {
-        font-size: 1.2rem;
-        font-weight: 700;
-        color: $color-text;
-        margin-bottom: 1rem;
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.tag-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18px;
+    background: var(--main-pink);
+    border-radius: 5px;
+    padding: 10px;
+    .tag-title {
+        color: white;
+        font-size: 0.625rem;
     }
-    &__description {
-        font-size: 1.2rem;
-        font-weight: 400;
-        color: $color-text;
-        margin-bottom: 1rem;
-    }
-    &__button {
-        font-size: 1.2rem;
-        font-weight: 700;
-        color: $color-text;
-        background-color: $color-primary;
-        border: none;
-        border-radius: 0.5rem;
-        padding: 0.5rem 1rem;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-        &:hover {
-            background-color: $color-primary-dark;
+    @media screen and (min-width: 768px) {
+        padding: 15px 30px;
+        border-radius: 10px;
+        .tag-title {
+            font-size: 0.875rem;
         }
     }
 }

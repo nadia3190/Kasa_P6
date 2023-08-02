@@ -1,6 +1,6 @@
 :root {
     --main-pink: #FF6060;
-    --container-grey: grey;
+    --container-grey: #F6F6F6;
 }
 
 @keyframes fade {
@@ -36,6 +36,7 @@
         align-items: center;
         padding: 6px 12px;
         cursor: pointer;
+        color: #FFF;
         &-icon {
             height: 12px;
         }
@@ -48,7 +49,7 @@
         }
     }
     &-description {
-        color: black;
+        color: var(--main-pink);
         font-size: 0.75rem;
         font-weight: 400;
         border-radius: 0 0 10px 10px;
