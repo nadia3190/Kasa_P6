@@ -1,10 +1,13 @@
 .home {
     display: flex;
     align-content: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 25px;
+    background-color: #F6F6F6;
+    padding-top: 30px;
+    border-radius: 10px;
     @media screen and (min-width: 768px) {
         .home {
             margin: 0 auto;
@@ -13,6 +16,7 @@
             gap: 50px 60px;
             flex-direction: row;
             flex-wrap: wrap;
+            background-color: white;
         }
     }
 }
