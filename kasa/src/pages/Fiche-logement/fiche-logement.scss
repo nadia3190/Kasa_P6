@@ -20,7 +20,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .container-content {
         flex-direction: column;
         justify-content: space-between;
@@ -33,7 +33,7 @@ h2 {
         font-size: 1.125rem;
     }
     .container-wrapper {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
     }
     .container-host-rating {
@@ -49,7 +49,6 @@ h2 {
 
 .collapsible-container {
     display: flex;
-    flex-direction: row;
     gap: 20px;
     margin-bottom: 20px;
 }

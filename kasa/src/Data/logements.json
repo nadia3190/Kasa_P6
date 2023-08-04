@@ -180,7 +180,37 @@
             "Charme"
         ]
     },
-
+    {
+        "id": "b4c67936",
+        "title": "Cheap - Studio 18ème",
+        "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-6-1.jpg",
+        "pictures": [
+            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-6-1.jpg",
+            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-6-2.jpg",
+            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-6-3.jpg",
+            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-6-4.jpg"
+        ],
+        "description": "Ce Studio entièrement fonctionnel sera votre parfait pied à terre pour toutes vos excursions parisiennes. Idéalement situé près des lignes 2 et 4, vous accéderez très rapidement à tous les points touristiques de Paris.",
+        "host": {
+            "name": "Hugo Perrier",
+            "picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-4.jpg"
+        },
+        "rating": "3",
+        "location": "Ile de France - Paris 18e",
+        "equipments": [
+            "Salle de bains",
+            "Frigo",
+            "Wi-fi",
+            "Sèche Cheveux",
+            "Bureau",
+            "Parking"
+        ],
+        "tags": [
+            "Transports",
+            "Cheap",
+            "18ème"
+        ]
+    },
     {
         "id": "bc6f7112",
         "title": "Superbe appartement proche Tour Eiffel",
@@ -276,6 +306,35 @@
             "11e",
             "Metro 3",
             "Metro 2"
+        ]
+    },
+    {
+        "id": "2cf259e1",
+        "title": "Charmant Studio Marais",
+        "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-10-1.jpg",
+        "pictures": [
+            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-10-1.jpg",
+            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-10-2.jpg",
+            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-10-3.jpg",
+            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-10-4.jpg"
+        ],
+        "description": "Situé en plein coeur du Marais, notre studio est idéal pour les touristes en quête de découverte. Sa cuisine toute équipée est particulièrement pratique.",
+        "host": {
+            "name": "Victor Moran",
+            "picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-7.jpg"
+        },
+        "rating": "4",
+        "location": "Ile de France - Paris 11e",
+        "equipments": [
+            "Clic-clac",
+            "Four",
+            "Sèche Cheveux",
+            "Wi-fi"
+        ],
+        "tags": [
+            "Marais",
+            "Studio",
+            "Parc"
         ]
     },
     {
@@ -554,66 +613,6 @@
             "Louvre",
             "Marais",
             "Rivoli"
-        ]
-    },
-    {
-        "id": "b4c67936",
-        "title": "Cheap - Studio 18ème",
-        "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-6-1.jpg",
-        "pictures": [
-            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-6-1.jpg",
-            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-6-2.jpg",
-            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-6-3.jpg",
-            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-6-4.jpg"
-        ],
-        "description": "Ce Studio entièrement fonctionnel sera votre parfait pied à terre pour toutes vos excursions parisiennes. Idéalement situé près des lignes 2 et 4, vous accéderez très rapidement à tous les points touristiques de Paris.",
-        "host": {
-            "name": "Hugo Perrier",
-            "picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-4.jpg"
-        },
-        "rating": "3",
-        "location": "Ile de France - Paris 18e",
-        "equipments": [
-            "Salle de bains",
-            "Frigo",
-            "Wi-fi",
-            "Sèche Cheveux",
-            "Bureau",
-            "Parking"
-        ],
-        "tags": [
-            "Transports",
-            "Cheap",
-            "18ème"
-        ]
-    },
-    {
-        "id": "2cf259e1",
-        "title": "Charmant Studio Marais",
-        "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-10-1.jpg",
-        "pictures": [
-            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-10-1.jpg",
-            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-10-2.jpg",
-            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-10-3.jpg",
-            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-10-4.jpg"
-        ],
-        "description": "Situé en plein coeur du Marais, notre studio est idéal pour les touristes en quête de découverte. Sa cuisine toute équipée est particulièrement pratique.",
-        "host": {
-            "name": "Victor Moran",
-            "picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-7.jpg"
-        },
-        "rating": "4",
-        "location": "Ile de France - Paris 11e",
-        "equipments": [
-            "Clic-clac",
-            "Four",
-            "Sèche Cheveux",
-            "Wi-fi"
-        ],
-        "tags": [
-            "Marais",
-            "Studio",
-            "Parc"
         ]
     }
 ]
