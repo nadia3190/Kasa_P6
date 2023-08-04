@@ -38,11 +38,17 @@ const Section = (props) => {
     }
     return null;
   }
+  const iconStyle = {
+    height: "12px",
+    transition: "transform 0.3s ease",
+    transform: isShown ? "rotate(180deg)" : "rotate(0)",
+  };
+
        return (
         <article key={props.id} className="section">
             <div onClick={toggle} className="section-title-container">
                 <h3 className="section-title">{props.title}</h3>
-                <img src={downArrow} className={isShown ? "section-icon rotate" : "section-icon"} alt="icône d'ouverture ou fermeture."/>
+                <img src={downArrow} className="section-icon" alt="icône d'ouverture ou fermeture."  style={iconStyle} />
             </div>
              {isShown && <div className="section-description animate">{renderContent()}</div>}
        

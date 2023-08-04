@@ -1,10 +1,12 @@
 .stars {
     display: flex;
+    border-radius: 10px;
 }
 
 .st {
     width: 15px;
     height: 15px;
+    border-radius: 50% 50% 50% 50%;
 }
 
 @media screen and (min-width: 768px) {
