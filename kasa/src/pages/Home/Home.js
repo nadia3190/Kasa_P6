@@ -26,7 +26,7 @@ const Home = () => {
         <Background image={headerImage} title="Chez vous, partout et ailleurs" />
       </div>
       <div className="home">
-        {isLoading ? <Chargement /> : cards}
+        {isLoading ? <Chargement  /> : <div className="cards"> {cards}</div>}
       </div>
     </>
   );

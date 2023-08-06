@@ -1,84 +1,100 @@
 // card.scss
-.card {
-    height: 270px;
-    width: 100%;
-    margin-bottom: 20px;
+.cards {
     display: flex;
-    position: relative;
-    cursor: pointer;
-    width: 100%;
-    gap: 20px;
-    .cardimg {
-        border-radius: 10px;
-        object-fit: cover;
-        filter: brightness(85%);
-        transition: 0.3s;
-        &:hover {
-            filter: none;
-        }
-        width: 100%;
-        height: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 25px;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        justify-content: unset;
+        gap: 20px;
     }
-    .cardtitle {
-        color: white;
-        font-size: 1.125rem;
-        font-weight: 500;
-        position: absolute;
-        bottom: 0;
-        margin: 15px 20px;
-        background: linear-gradient(180deg, #FF6060 0%, rgba(255, 96, 96, 0.5) 100%);
-        padding: 5px 10px;
-        border-radius: 10px;
-        text-shadow: 0 0 50px black;
-    }
-    .cardlink:nth-child(1) {
-        animation: slide-in-from-top-10 1s;
-    }
-    .cardlink:nth-child(2) {
-        animation: slide-in-from-top-10 1.4s;
-    }
-    @keyframes slide-in-from-top-10 {
-        from {
-            transform: translateY(-10%);
-            opacity: 0;
-        }
-        to {
-            transform: translateY(0%);
-            opacity: 1;
-        }
-    }
-    @media screen and (min-width: 768px) {
-        section.home>a {
-            flex: 1 1 250px;
-        }
-        article.card {
-            height: 340px;
+    .cardlink {
+        width: 30%;
+        height: 270px;
+        @media screen and (max-width: 768px) {
             width: 100%;
         }
-        .cardtitle {
-            margin: 20px;
-        }
-        .cardlink:nth-child(1),
-        .cardlink:nth-child(4) {
-            animation: slide-in-from-top-25 1s;
-        }
-        .cardlink:nth-child(2),
-        .cardlink:nth-child(5) {
-            animation: slide-in-from-top-25 1.4s;
-        }
-        .cardlink:nth-child(3),
-        .cardlink:nth-child(6) {
-            animation: slide-in-from-top-25 1.8s;
-        }
-    }
-    @keyframes slide-in-from-top-25 {
-        from {
-            transform: translateY(-10%);
-            opacity: 0;
-        }
-        to {
-            transform: translateY(0%);
-            opacity: 1;
+        .card {
+            margin-bottom: 20px;
+            position: relative;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            .cardimg {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                object-fit: cover;
+                filter: brightness(85%);
+                transition: 0.3s;
+                &:hover {
+                    filter: none;
+                }
+            }
+            .cardtitle {
+                color: white;
+                font-size: 1.125rem;
+                font-weight: 500;
+                position: absolute;
+                bottom: 0;
+                margin: 15px 20px;
+                background: linear-gradient(180deg, #FF6060 0%, rgba(255, 96, 96, 0.5) 100%);
+                padding: 5px 10px;
+                border-radius: 10px;
+                text-shadow: 0 0 50px black;
+            }
+            .cardlink:nth-child(1) {
+                animation: slide-in-from-top-10 1s;
+            }
+            .cardlink:nth-child(2) {
+                animation: slide-in-from-top-10 1.4s;
+            }
+            @keyframes slide-in-from-top-10 {
+                from {
+                    transform: translateY(-10%);
+                    opacity: 0;
+                }
+                to {
+                    transform: translateY(0%);
+                    opacity: 1;
+                }
+            }
+            @media screen and (min-width: 768px) {
+                section.home>a {
+                    flex: 1 1 250px;
+                }
+                article.card {
+                    height: 340px;
+                    width: 100%;
+                }
+                .cardtitle {
+                    margin: 20px;
+                }
+                .cardlink:nth-child(1),
+                .cardlink:nth-child(4) {
+                    animation: slide-in-from-top-25 1s;
+                }
+                .cardlink:nth-child(2),
+                .cardlink:nth-child(5) {
+                    animation: slide-in-from-top-25 1.4s;
+                }
+                .cardlink:nth-child(3),
+                .cardlink:nth-child(6) {
+                    animation: slide-in-from-top-25 1.8s;
+                }
+            }
+            @keyframes slide-in-from-top-25 {
+                from {
+                    transform: translateY(-10%);
+                    opacity: 0;
+                }
+                to {
+                    transform: translateY(0%);
+                    opacity: 1;
+                }
+            }
         }
     }
 }

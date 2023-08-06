@@ -1,21 +1,13 @@
 .home {
     display: flex;
+    justify-content: center;
     align-content: center;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 25px;
+    align-items: center;
     background-color: #F6F6F6;
-    padding-top: 30px;
+    padding: 30px;
     border-radius: 10px;
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 768px) {
         .home {
-            margin: 0 auto;
-            border-radius: 25px;
-            padding: 55px 50px;
-            gap: 50px 60px;
-            flex-direction: row;
-            flex-wrap: wrap;
             background-color: white;
         }
     }

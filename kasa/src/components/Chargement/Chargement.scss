@@ -2,7 +2,7 @@
     --main-pink: #FF6060;
 }
 
-.loader--wrapper {
+.loader-wrapper {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -11,14 +11,14 @@
     padding-bottom: 30vh;
 }
 
-.loader--image {
+.loader-image {
     width: 70px;
     margin-bottom: 0.8em;
     animation: loading-spin 2s linear infinite;
     margin-top: 15px;
 }
 
-.loader--text {
+.loader-text {
     width: 90px;
     color: var(--main-pink);
     animation: loading-text-opacity 2s linear 0s infinite normal;
