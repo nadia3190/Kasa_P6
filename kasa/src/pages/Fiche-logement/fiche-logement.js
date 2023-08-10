@@ -27,10 +27,10 @@ import { useState, useEffect } from "react";
 
   const selectedLogement = data.find((logement) => logement.id === id);//  on récupère le logement qui correspond à l'id de l'url
  
-    const ratingValue = parseInt(selectedLogement.rating);
+    const ratingValue = parseInt(selectedLogement.rating);// on convertit la note en nombre entier 
      const tagsValue = selectedLogement.tags || [];// si le logement n'a pas de tags on lui attribue un tableau vide
     const equipmentsValue = selectedLogement.equipments !== null ? selectedLogement.equipments : [];
-      const description = selectedLogement.description || "";//
+      const description = selectedLogement.description || "";// si le logement n'a pas de description on lui attribue une chaîne de caractères vide
       
   if (typeof id === 'undefined') {
     return navigate("/not-found"); // si le logement n'existe pas on redirige vers la page 404
@@ -40,22 +40,18 @@ import { useState, useEffect } from "react";
   <Carroussel images={selectedLogement.pictures} />
       <div className="container-content">
         <div className="container-wrapper">
-          <div className="container-wrapper-left">
             <div className="container-heading">
              
               <h1 className="container-title">{selectedLogement.title}</h1>
               <h2>{selectedLogement.location}</h2>
                <Tag tags={tagsValue} />
             </div>
-          </div>
-       
-        </div>
+        
         <div className="container-host-rating">
             <Host host={selectedLogement.host} />
-            <StarRating rating={ratingValue} />
-           
-          </div>
-
+            <StarRating rating={ratingValue} />   
+        </div>
+      </div>
 
          <div className='collapsible-container'>
           <Section type={paragraph} title="Description" description={description} equipments={null} />
