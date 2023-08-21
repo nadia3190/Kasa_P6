@@ -1,0 +1,13 @@
+
+title: Mon Site Jekyll
+description: Un super site généré par Jekyll
+baseurl: ""
+
+
+theme: minima
+
+
+permalink: pretty
+
+sass:
+  sass_dir: assets/components
