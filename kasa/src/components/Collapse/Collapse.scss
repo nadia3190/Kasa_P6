@@ -23,7 +23,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 6px 12px;
+        padding: 15px;
         cursor: pointer;
         color: #FFF;
     }
@@ -33,12 +33,12 @@
     }
     &-description {
         color: var(--main-pink);
-        font-size: 0.75rem;
         font-weight: 400;
         border-radius: 0 0 10px 10px;
-        padding: 23px 12px;
         background-color: var(--container-grey);
         list-style: none;
+        margin: 0;
+        padding: 15px;
         &-li {
             line-height: 17px;
         }

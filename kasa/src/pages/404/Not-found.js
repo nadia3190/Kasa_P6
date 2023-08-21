@@ -13,7 +13,7 @@ function NotFound() {
                 <span>4</span>
             </h1>
             <h2 className="notfound-subtitle">Oups ! La page que vous demandez n'existe pas.</h2>
-            <p className="notfound-paragraph"><Link to="/">Retourner sur la page d’accueil</Link></p>
+            <Link className="notfound-paragraph" to="/">Retourner sur la page d’accueil</Link>
         </section>
     )
 }

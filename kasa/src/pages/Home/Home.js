@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Home.scss";
-import Background from "../../components/Background/Background";
+import Banner from "../../components/Banner/Banner";
 import headerImage from "../../assets/images/muhr-P_XxsdVgtpQ-unsplash.jpg";
 import Card from "../../components/Cards/Card";
 import data from "../../Data/logements.json"; 
@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <>
       <div>
-        <Background image={headerImage} title="Chez vous, partout et ailleurs" />
+        <Banner image={headerImage} title="Chez vous, partout et ailleurs" />
       </div>
       <div className="home">
         {isLoading ? <Chargement  /> : <div className="cards"> {cards}</div>}

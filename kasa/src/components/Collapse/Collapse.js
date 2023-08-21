@@ -1,5 +1,5 @@
 import React from "react";
-import "./Section.scss"
+import "./Collapse.scss"
 import downArrow from "../../assets/images/down-arrow.svg"
 import { paragraph, list } from "../../assets/Constantes/constant";
 import PropTypes from "prop-types";

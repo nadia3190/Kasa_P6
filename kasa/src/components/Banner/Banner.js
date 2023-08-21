@@ -1,5 +1,5 @@
 import React from "react";
-import "./Background.scss"
+import "./Banner.scss"
 
 const Background = (props) => {
     return (
