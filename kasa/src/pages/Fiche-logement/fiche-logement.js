@@ -9,12 +9,14 @@ import './fiche-logement.scss';
 import { paragraph, list } from '../../assets/Constantes/constant';
 import data from '../../Data/logements.json';
 import { useNavigate, useParams } from 'react-router-dom';
+//useNavigate permet de naviguer entre les pages et useParams permet de récupérer les paramètres de l'url
+
 import { useState, useEffect } from 'react';
 
 const FicheLogement = () => {
   const navigate = useNavigate(); // c'est un hook qui permet de naviguer entre les pages
   const { id } = useParams(); // c'est un hook qui permet de récupérer les paramètres de l'url
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true); //useState permet de créer un état local dans un composant fonctionnel
 
   useEffect(() => {
     //  permet d'exécuter une fonction au chargement de la page

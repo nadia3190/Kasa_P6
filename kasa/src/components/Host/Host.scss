@@ -3,24 +3,19 @@
     flex-direction: row;
     align-items: center;
     gap: 10px;
-}
-
-.hostName {
-    font-weight: inherit;
-    color: #FF6060;
-    width: 100px;
-    text-align: end;
-}
-
-.hostImage {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-}
-
-@media screen and (min-width: 768px) {
+    .hostName {
+        font-weight: inherit;
+        color: #FF6060;
+        width: 100px;
+        text-align: end;
+    }
     .hostImage {
-        width: 64px;
-        height: 64px;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        @media screen and (min-width: 768px) {
+            width: 64px;
+            height: 64px;
+        }
     }
 }

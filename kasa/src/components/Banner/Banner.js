@@ -1,7 +1,7 @@
 import React from 'react';
 import './Banner.scss';
 
-const Background = (props) => {
+const Banner = (props) => {
   return (
     <div className="Background">
       <img
@@ -14,5 +14,5 @@ const Background = (props) => {
   );
 };
 
-export default Background;
+export default Banner;
 //props est un objet qui contient toutes les propriétés passées à notre composant.
