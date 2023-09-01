@@ -22,8 +22,8 @@ const FicheLogement = () => {
     //  permet d'exécuter une fonction au chargement de la page
     setTimeout(() => {
       // permet de simuler un chargement de 1s
-      setIsLoading(false);
-    }, 1000);
+      setIsLoading(false); // permet de mettre fin au chargement
+    }, 1000); // 1000ms = 1s
   }, []); //le tableau vide permet d'exécuter la fonction une seule fois au chargement de la page
 
   const selectedLogement = data.find((logement) => logement.id === id); //  on récupère le logement qui correspond à l'id de l'url

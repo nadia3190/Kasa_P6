@@ -22,11 +22,7 @@ const Carroussel = (props) => {
   const carrouselImages = props.images.map((image, index) => (
     <div
       key={index}
-      className={
-        counter === index
-          ? 'carrousel-slide carrousel-active'
-          : 'carrousel-slide'
-      } //si counter est égal à l'index de l'image, on ajoute la classe carrousel-active, sinon on ajoute la classe carrousel-slide
+      className={counter === index ? 'carrousel-active' : 'carrousel-slide'} //si counter est égal à l'index de l'image, on ajoute la classe carrousel-active, sinon on ajoute la classe carrousel-slide
     >
       {index === counter && ( //si l'index de l'image est égal à counter, on affiche l'image correspondante
         <img

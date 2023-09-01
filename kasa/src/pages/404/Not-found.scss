@@ -7,6 +7,7 @@
         margin-top: 195px;
         font-size: 6rem;
         >span:nth-of-type(1) {
+            /*nth-of-type() est une fonction CSS qui permet de sélectionner un élément en fonction de son type et de sa position parmi une liste d'éléments frères.*/
             animation-delay: 0.0s;
         }
         >span:nth-of-type(2) {

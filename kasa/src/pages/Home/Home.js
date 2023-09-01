@@ -21,6 +21,7 @@ const Home = () => {
   const cards = data.map((item) => <Card key={item.id} item={item} />); //map permet de parcourir un tableau et de retourner un tableau de même taille
   //key est une prop spéciale qui permet à React d'identifier chaque élément de manière unique
   //item est une prop qui contient les données de chaque logement
+  //item est ajouté en tant que prop dans le composant Card et est accessible via props.item
   //item.id est l'identifiant unique de chaque logement
   return (
     //on retourne le composant Home qui contient le composant Banner et le composant Card qui contient les données de chaque logement
