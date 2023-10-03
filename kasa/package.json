@@ -2,6 +2,7 @@
     "name": "kasa",
     "version": "0.1.0",
     "private": true,
+    "homepage": "https://nadia3190.github.io/kasa/",
     "dependencies": {
         "@testing-library/jest-dom": "^5.16.5",
         "@testing-library/react": "^13.4.0",
@@ -20,7 +21,9 @@
         "build": "react-scripts build",
         "build:staging": "env-cmd -f .env.staging npm run build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "predploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": [
@@ -46,6 +49,7 @@
         "@babel/preset-env": "^7.22.5",
         "@babel/preset-react": "^7.22.5",
         "babel-loader": "^9.1.2",
+        "gh-pages": "^6.0.0",
         "prettier": "^2.8.8",
         "webpack": "^5.88.1",
         "webpack-cli": "^5.1.4",
