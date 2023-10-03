@@ -1,0 +1,48 @@
+.container-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .container-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .container-heading {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            h1 {
+                /* font-size: 1.125rem;*/
+                color: #FF6060;
+                margin: 0;
+            }
+            h2 {
+                /* font-size: 0.875rem;*/
+                color: #FF6060;
+                margin: 0;
+            }
+        }
+        .container-host-rating {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            @media screen and (min-width: 768px) {
+                flex-direction: column;
+                align-items: flex-end;
+            }
+        }
+    }
+    .collapsible-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}

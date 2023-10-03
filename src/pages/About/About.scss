@@ -1,0 +1,11 @@
+.apropos {
+    min-height: 100vh;
+    img.Backround-image {
+        height: 220px;
+    }
+    @media screen and (min-width: 768px) {
+        &-Background {
+            margin-bottom: 30px;
+        }
+    }
+}

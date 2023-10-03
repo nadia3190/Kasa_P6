@@ -1,0 +1,31 @@
+   header {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       .logo {
+           img {
+               height: 68px;
+               width: auto;
+               @media screen and (max-width: 768px) {
+                   height: 40px;
+               }
+           }
+       }
+       .nav-menu {
+           display: flex;
+           flex-direction: row;
+           gap: 20px;
+           align-items: center;
+           .nav-links {
+               color: #ff6060;
+               text-decoration: none;
+               @media screen and (max-width: 768px) {
+                   text-transform: uppercase;
+                   font-size: small;
+               }
+               &:hover {
+                   text-decoration-line: underline;
+               }
+           }
+       }
+   }

@@ -1,0 +1,18 @@
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18px;
+    background: var(--main-pink);
+    padding: 10px 20px;
+    border-radius: 10px;
+    .tag-title {
+        color: white;
+    }
+}
