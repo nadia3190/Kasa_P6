@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/kasa/static/css/main.282e2f6f.css",
+    "main.js": "/kasa/static/js/main.0d07efa9.js",
+    "static/js/651.4abc1351.chunk.js": "/kasa/static/js/651.4abc1351.chunk.js",
+    "static/media/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png": "/kasa/static/media/kalen-emsley-Bkci_8qcdvQ-unsplash 2.640955dab8c7bff25514.png",
+    "static/media/muhr-P_XxsdVgtpQ-unsplash.jpg": "/kasa/static/media/muhr-P_XxsdVgtpQ-unsplash.61352a7ae7ebff30e925.jpg",
+    "static/media/chargement.png": "/kasa/static/media/chargement.0e3bb18d05b6e6bc4473.png",
+    "index.html": "/kasa/index.html",
+    "static/media/down-arrow.svg": "/kasa/static/media/down-arrow.16b912f87ce2849e129df0379fac8d0e.svg",
+    "static/media/next-arrow.svg": "/kasa/static/media/next-arrow.88153a5d119c2744ffe34dca1ef843df.svg",
+    "static/media/previous-arrow.svg": "/kasa/static/media/previous-arrow.19918a1634b1441a25ae0b50e6b1f85b.svg",
+    "static/media/grey-star-vector.svg": "/kasa/static/media/grey-star-vector.7e4ba6032d7d80ecc30aa389973cef95.svg",
+    "static/media/pink-star-vector.svg": "/kasa/static/media/pink-star-vector.6430150c126a3adf92c132c52c9c7428.svg",
+    "main.282e2f6f.css.map": "/kasa/static/css/main.282e2f6f.css.map",
+    "main.0d07efa9.js.map": "/kasa/static/js/main.0d07efa9.js.map",
+    "651.4abc1351.chunk.js.map": "/kasa/static/js/651.4abc1351.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.282e2f6f.css",
+    "static/js/main.0d07efa9.js"
+  ]
+}
